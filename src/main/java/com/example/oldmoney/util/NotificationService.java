@@ -26,7 +26,7 @@ public class NotificationService {
 
         try {
             mailSender.send(message);
-            logger.info("Error notification sent successfully to yjhwkdgh96@naver.com");
+            logger.info("Error notification sent successfully to woqhr63@gmail.com");
         } catch (Exception e) {
             logger.error("Failed to send error notification: {}", e.getMessage(), e);
         }

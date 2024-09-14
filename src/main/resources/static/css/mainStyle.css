@@ -1,0 +1,575 @@
+@charset "UTF-8";
+/* styles.css */
+
+/* 기본 body 스타일 */
+body {
+    /* 기본 폰트, 여백, 색상 설정 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    /* 최소 너비 설정 및 가로 스크롤 허용 */
+    min-width: 1200px;
+    overflow-x: auto;
+} 
+
+a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 부모 요소의 텍스트 색상 상속 */
+}
+
+/* 컨테이너 클래스 - 콘텐츠의 최대 너비 제한 */
+.container {
+    max-width: 1200px;
+    width: 100%;
+	min-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.commu-container {
+    max-width: 1200px;
+    width: 100%;
+	min-width: 800px;
+    margin: 0 auto;
+    padding: 0 0px;
+    box-sizing: border-box;
+}
+
+.hero-container {
+	display: flex;
+    max-width: 1200px;
+    width: 100%;
+	min-width: 800px;
+    margin: 0 auto;
+    padding: 0 0px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+/* 헤더 스타일 */
+header {
+    background: RGB(198,231,253);
+    color: black;
+    padding: 1em 0;
+    
+    
+}
+
+/* 헤더 내 컨테이너 스타일 */
+header .container {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* 헤더 제목 스타일 */
+header h1 {
+    margin: 0;
+}
+
+/* 네비게이션 링크 스타일 */
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 메인 콘텐츠 영역 스타일 */
+main {
+    padding: 1em 0;
+}
+
+.logview {
+    background: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 1200px;
+}
+
+/* 로그인 폼 스타일 */
+.login-form {
+    flex: 0 0 20%;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 240px; /* 원하는 높이로 설정 */
+}
+
+/* 로그인 폼 내부 요소 스타일 */
+.login-form h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.login-form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #004d99;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background: #003366;
+}
+
+.login-form .links a {
+    display: inline-block;
+    margin: 5px 0;
+    color: #004d99;
+    text-decoration: none;
+    font-size: 0.8em; /* 링크 텍스트 크기 조정 */
+}
+
+.login-form .links a:hover {
+    text-decoration: underline;
+}
+
+/* 회원가입 및 로그인 섹션 스타일 */
+.register, .login {
+    background: #f1f8e9;
+    padding: 2em 0;
+    text-align: center;
+    
+}
+
+/* 푸터 스타일 */
+footer {
+    background: RGB(198,231,253);
+    color: black;
+    padding: 1em 0;
+    text-align: center;
+  
+}
+
+/* 슬라이드쇼 스타일 */
+.slideshow-container {
+    flex: 1;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+.slides {
+    display: none;
+}
+
+/* 슬라이드쇼 네비게이션 버튼 스타일 */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 슬라이드쇼 텍스트 스타일 */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* 헤더에 스크롤링 텍스트 스타일 */
+.scrolling-text-container {
+    width: 300px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-text {
+    white-space: nowrap;
+    position: absolute;
+    animation: scroll 10s linear infinite;
+}
+
+/* 스크롤링 텍스트 애니메이션 */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* 커뮤니티 섹션 스타일 */
+
+.community {
+    padding: 2rem 0;
+}
+
+.community-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    height: 100%;
+}
+
+.community-posts table, .community-prizes table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+
+}
+
+.community-posts th, .community-prizes th {
+    background-color: RGB(198, 231, 253);
+    font-weight: bold;
+    border: 1px solid #bbb; /* 테두리 추가 */
+}
+
+
+.community-posts td a, .community-prizes td a {
+    color: #004d99;
+    text-decoration: none;
+  
+}
+
+.community-posts td a:hover, .community-prizes td a:hover {
+    text-decoration: underline;
+    
+}
+
+/* 커뮤니티 포스트 및 상금 정보 스타일 */
+.community-posts,
+.community-prizes {
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: 230px;
+}
+
+.community-posts {
+    flex: 0 0 35%;
+    margin-right: 0;
+}
+
+.community-prizes {
+    flex: 0 0 20%;
+    margin-left: 0;
+}
+
+.community-posts h2, 
+.community-prizes h2 {
+    margin-top: 0;
+}
+
+/* 개별 포스트 아이템 스타일 */
+.post-item {
+    margin-bottom: 10px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-item h3 {
+    margin-top: 0;
+}
+
+.post-item .btn {
+    display: inline-block;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.post-item .btn:hover {
+    background: #555;
+}
+
+/* 상금 정보 리스트 스타일 */
+.community-prizes ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.community-prizes li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+}
+
+/* 박스 래퍼 스타일 */
+.box-wrapper {
+    display: flex;
+    justify-content: center; /* 박스들을 수평 중앙에 배치 */
+    gap: 80px; /* 박스 사이의 간격을 30px로 조정 */
+    align-items: center; /* 박스들을 수직 중앙에 배치 */
+    width: 100%; /* 컨테이너의 너비를 100%로 설정 */
+    box-sizing: border-box; /* 패딩과 보더를 너비와 높이에 포함 */
+}
+
+/* 개별 박스 컨테이너 스타일 */
+.box-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 박스 채우기 애니메이션 스타일 */
+.box-fill {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/money.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+/* 박스 라벨 스타일 */
+.box-label {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    z-index: 1;
+}
+
+/* 큰 화면에 대한 미디어 쿼리 */
+
+@media screen and (min-width: 1201px) {
+    body {
+      /*   display: flex; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 1200px;
+    }
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1800px; /* 전체 너비 조정 */
+    margin: 0 auto;
+}
+
+.main-content {
+    flex: 1;
+    max-width: 1200px; /* 기존 컨테이너 최대 너비 */
+    min-width: 1200px; /* 기존 컨테이너 최소 너비 */
+}
+/* 광고  */
+.ad-left, .ad-right {
+	padding-top: 1em;
+	display: none; /* 초기에는 광고를 숨깁니다 */
+    width: 250px;
+    height: 900px;
+    position: sticky;
+    top: 20px; /* 스크롤 시 상단에서 20px 떨어진 위치에 고정 */
+}
+
+.ad-left {
+    margin-right: 20px;
+}
+
+.ad-right {
+    margin-left: 20px;
+}
+
+
+
+
+/* 광고 닫기 버튼  */
+
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.ad-blocked {
+    background-color: rgba(0, 0, 0, 0.7);
+   	color: #fff;
+    padding: 20px;
+  	border-radius: 5px;
+  	text-align: center; /* 텍스트를 수평으로 중앙 정렬 */
+}
+
+
+
+.products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            height: 150px;
+            background-color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .product-description {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        
+            
+.profile-container {
+    height: 240px; /* 로그인 폼과 같은 높이로 설정 */
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.profile-table {
+    width: 100%;
+    height: calc(100% - 40px); /* 로그아웃 버튼을 위한 공간 확보 */
+    border-collapse: collapse;
+}
+
+.profile-image-cell {
+    width: 50%;
+    height: 100%;
+}
+
+.profile-info-cell {
+    width: 50%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+}
+
+.profile-info {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logout-form {
+    margin-top: auto;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #004d99;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+    

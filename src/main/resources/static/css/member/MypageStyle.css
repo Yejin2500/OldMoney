@@ -1,0 +1,227 @@
+@charset "UTF-8";
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.mylogin-form {
+    flex: 0 0 20%;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 240px; /* 원하는 높이로 설정 */
+}
+
+.mylogin-form h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.mylogin-form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.mylogin-form button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #004d99;
+    color: #fff;
+    cursor: pointer;
+}
+.myPage {
+    background: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.vanner {
+    flex: 1;
+    max-width: 750px;
+    margin-right: 20px;
+}
+
+.vanner img {
+    width: 100%;
+    height: auto;
+}
+.container1 {
+    max-width: 1200px;
+    width: 100%;
+    min-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.Account-body {
+    display: flex;
+    justify-content: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* 3개의 열, 최소 250px, 최대 1fr */
+    gap: 1rem;
+    justify-content: center;
+    max-width: 900px; /* 최대 너비 설정 */
+    width: 100%;
+}
+
+.acount-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card-content {
+    cursor: pointer;
+}
+
+.primary-account {
+    border: 2px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    background: linear-gradient(135deg, #e6f2ff 0%, #ffffff 100%);
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.primary-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffd700;
+    font-size: 1.2em;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-info{
+    max-height: 300px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.Account-header{
+    background-color: #004d99;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.subscription-header{
+    background-color: #004d99;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom : 10px;
+}
+.subscription-body, .cancellation-body, .expiration-body{
+    font-weight : bold;
+}
+.cancellation-header{
+    background-color: #004d99;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom : 10px;
+}
+.expiration-header{
+    background-color: #004d99;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom : 10px;
+}
+.product-actions{
+    margin-bottom : 10px;
+}
+.btn-primary{
+    padding: 5px;
+    background: #004d99;
+    color: #fff;
+    font-size: 1em;
+}
+
+.btn-secondary{
+    padding: 5px;
+    background: #000000;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* 기본 설정 */
+.quick {
+    position: fixed; /* 사이드바를 스크롤 시에도 고정 */
+    top: 400px; /* 상단에서의 위치 조정 */
+    right: 300px;
+    width: 150px; /* 사이드바의 너비 조정 */
+    min-height: 200px;
+    padding-top: 20px;
+}
+
+@media (max-width: 2000px) {
+    .quick {
+        right: 0px; /* 창모드일 때 메인 콘텐츠와 겹치지 않도록 조정 */
+        width: 150px;
+    }
+}
+
+.list {
+    padding: 5px 0 29px;
+}
+
+.list li {
+    margin: 0;
+}
+.account-actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.account-actions .btn-danger {
+    background-color: #fa5252;
+    color: white;
+}
+
+.account-actions .btn-danger:hover {
+    background-color: #e03131;
+}

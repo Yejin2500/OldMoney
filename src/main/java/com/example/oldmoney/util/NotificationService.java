@@ -19,6 +19,8 @@ public class NotificationService {
         SimpleMailMessage message = new SimpleMailMessage();
         //message.setFrom("yjhwkdgh961010@gmail.com");
        //message.setTo("yjhwkdgh961010@gmail.com"); // 수신자 이메일
+        message.setFrom("woqhr63@gmail.com");
+        message.setTo("woqhr63@gmail.com");
         message.setSubject(subject);
         message.setText("Scheduler error occurred:\n\n" + errorMessage);
 

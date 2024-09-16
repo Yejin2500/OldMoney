@@ -114,10 +114,8 @@
 <body>
 <header>
         <div class="container">
-         <a href="/index.do"><img alt ="main"
-            src="${pageContext.request.contextPath}/img/logo2.png"
-            style="width: 80px; height: 60px; vertical-alignt: bottom"></a>
-            <h1><a href="/index.do">neoheulge</a></h1>
+         <a href="/index.do" class="logo-link">
+            <h1><a href="/index.do">OLD MθNE¥</a></h1>
             <div class="scrolling-text-container">
             <div class="scrolling-text"></div>
         </div>

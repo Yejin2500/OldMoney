@@ -15,6 +15,43 @@
 <body>
 
 <script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.vanner img');
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        //slide.classList.remove('active');
+        slide[i].style.display = "none";
+        if (i === index) {
+        
+            //slide.classList.add('active');
+            slide[currentSlide-1].style.display = "block";
+        }
+    });
+}
+
+function changeSlide(direction) {
+	console.log(direction);
+	console.log(currentSlide);
+    currentSlide = currentSlide + direction;
+    if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+    } else if (currentSlide >= slides.length) {
+        //currentSlide = 0;
+    }
+    showSlide(currentSlide);
+}
+//Initialize the first slide
+showSlide(currentSlide);
+
+//Automatic slide change every 3 seconds
+setInterval(() => {
+    changeSlide(1);
+}, 3000);
+</script>
+
+
+<script>
         function performSearch() {
             var searchType = document.getElementById("searchType").value;
             var searchTerm = document.getElementById("search").value.trim();
@@ -36,11 +73,21 @@
     }
     </script>
     <main>
-<div class="commu">
-	<div class="header-content">
-		<div class="vanner">
-			<img alt="main" src="${pageContext.request.contextPath}/img/ad1.jpg" style="width:898px; height: 280px;">
-		</div>
+		
+		
+	<div class="header-content" style="display: flex; align-items: center;">
+    <div class="vanner" style="flex: 1; max-width: 450px;">
+        <img alt="main1" src="${pageContext.request.contextPath}/img/ad1.png" class="active">
+        <img alt="main2" src="${pageContext.request.contextPath}/img/ad2.png">
+        <img alt="main3" src="${pageContext.request.contextPath}/img/ad3.jpg">
+        <div class="slider-buttons">
+            <button class="slider-button" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="slider-button" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+		
+		
+		
 		
 		<div class="login-form">
 			

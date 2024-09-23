@@ -4,15 +4,42 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.commu {
-    background: #ffffff;
-    text-align: center;
-    border-radius: 8px;
-    max-width: 1200px;
+.vanner {
+    flex: 1;
+    position: relative;
+    max-width: 800px;
+    width: 100%; /* Adjust as necessary */
+    overflow: hidden;
 }
+
+.vanner img {
+    width: 100%;
+    display: none; /* Hide all images initially */
+}
+
+.vanner img.active {
+    display: block; /* Show only the active image */
+}
+
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
 
 .search-form {
  

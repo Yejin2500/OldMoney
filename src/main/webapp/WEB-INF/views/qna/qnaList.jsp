@@ -5,8 +5,9 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
-<jsp:include page="../header.jsp"/>
+<jsp:include page="../header.jsp" />
 <link rel="stylesheet" type="text/css" href="/css/qna/qnaStyle.css">
+<div align="center" style="margin-top: 80px;"></div>
 <script>
     function performSearch() {
         var searchType = document.getElementById("searchType").value;

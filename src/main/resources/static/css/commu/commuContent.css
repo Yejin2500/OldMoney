@@ -15,7 +15,7 @@
 h2 {
     margin-bottom: 1em;
     font-size: 1.5em;
-    color: #004d99;
+    color: #400000;
     text-align: center;
 }
 
@@ -26,7 +26,7 @@ h2 {
 }
 
 .content-table th {
-    background-color: #004d99;
+    background-color: #400000;
     color: #ffffff;
     padding: 10px;
     text-align: left;
@@ -53,14 +53,14 @@ input[type="button"] {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #004d99;
+    background-color: #400000;
     color: #fff;
     transition: background-color 0.3s;
     margin-right: 10px;
 }
 
 input[type="button"]:hover {
-    background-color: #003366;
+    background-color: #400000;
 }
 
 textarea{

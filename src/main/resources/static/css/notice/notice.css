@@ -16,7 +16,7 @@
 h2 {
     margin-bottom: 1em;
     font-size: 1.5em;
-    color: #004d99;
+    color: #400000;
 }
 
 /* 테이블 스타일 */
@@ -26,7 +26,7 @@ table {
 }
 
 th {
-    background-color: #004d99;
+    background-color: #400000;
     color: #ffffff;
     padding: 10px;
     text-align: left;
@@ -59,30 +59,30 @@ input[type="button"] {
 }
 
 input[type="submit"] {
-    background-color: #004d99;
+    background-color: #400000;
     color: #fff;
 }
 
 input[type="submit"]:hover {
-    background-color: #003366;
+    background-color: #400000;
 }
 
 input[type="reset"] {
-    background-color: #004d99;
+    background-color: #400000;
     color: #fff;
 }
 
 input[type="reset"]:hover {
-    background-color: #003366;
+    background-color: #400000;
 }
 
 input[type="button"] {
-    background-color: #004d99;
+    background-color: #400000;
     color: #fff;
 }
 
 input[type="button"]:hover {
-    background-color: #003366;
+    background-color: #400000;
 }
 
 /* 폼 요소 스타일 */

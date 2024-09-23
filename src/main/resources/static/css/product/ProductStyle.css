@@ -23,7 +23,7 @@
 }
 
 .myPage-table th {
-     background-color: #004d99;
+     background-color: #400000;
     color: #ffffff;
     padding: 10px;
     text-align: left;
@@ -41,7 +41,7 @@
 }
 
 .myPage-header {
-      background-color: #004d99;
+    background-color: #400000;
     color: #ffffff;
     padding: 10px;
     text-align: center;
@@ -50,7 +50,7 @@
 }
 
 .myPage-link {
-    color: #004d99;
+    color: #400000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -89,7 +89,7 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: #004d99;
+    background: #400000;
     color: #fff;
     font-size: 1em;
     cursor: pointer;
@@ -97,13 +97,13 @@
 }
 
 .login-form button:hover {
-    background: #003366;
+    background: #400000;
 }
 
 .login-form .links a {
     display: inline-block;
     margin: 5px 0;
-    color: #004d99;
+    color: #400000;
     text-decoration: none;
     font-size: 0.8em; /* 링크 텍스트 크기 조정 */
 }
@@ -114,7 +114,7 @@
 
 /* 회원가입 및 로그인 섹션 스타일 */
 .register, .login {
-    background: #f1f8e9;
+    background: #ffffff;
     padding: 2em 0;
     text-align: center;
 

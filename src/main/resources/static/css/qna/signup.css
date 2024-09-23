@@ -50,7 +50,7 @@ body {
 }
 
 .form-container button {
-    background-color: #004D99;
+    background-color: #400000;
     color: white;
     border: none;
     padding: 15px;
@@ -63,7 +63,7 @@ body {
      display: inline;
 }
 .form-container button:hover {
-    background-color: #003a7d;
+    background-color: #400000;
 }
 
 .form-container input::placeholder {
@@ -124,7 +124,7 @@ body {
 
 /* 파일 선택 버튼 커스텀 스타일 (선택사항) */
 .form-container .profile-upload input[type="file"]::-webkit-file-upload-button {
-    background-color: #004D99;
+    background-color: #400000;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -133,5 +133,5 @@ body {
 }
 
 .form-container .profile-upload input[type="file"]::-webkit-file-upload-button:hover {
-    background-color: #003a7d;
+    background-color: #400000;
 }

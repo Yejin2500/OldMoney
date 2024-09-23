@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root {
-    --primary-color: #4a90e2;
-    --secondary-color: #f39c12;
+    --primary-color: #400000;
+    --secondary-color: #808000;
     --background-color: #f5f7fa;
     --text-color: #333;
     --card-background: #fff;
@@ -88,7 +88,7 @@
 }
 
 .show-details:hover {
-    background-color: #e67e22;
+    background-color: #400000;
 }
 
 .product-details {

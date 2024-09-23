@@ -36,7 +36,7 @@
 
 .search-form button {
     padding: 10px 20px;
-    background-color: #004d99;
+    background-color: #400000;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -45,7 +45,7 @@
 }
 
 .search-form button:hover {
-    background-color: #003366;
+    background-color: #400000;
 }
 
 .commu-table {
@@ -55,7 +55,7 @@
 }
 
 .commu-table th {
-    background-color: #004d99;
+    background-color: #400000;
     color: #ffffff;
     padding: 10px;
     text-align: left;
@@ -73,7 +73,7 @@
 }
 
 .commu-header {
-    background-color: #004d99;
+    background-color: #400000;
     padding: 10px;
     text-align: center;
     font-size: 1.2em;
@@ -81,7 +81,7 @@
 }
 
 .commu-link {
-    color: #004d99;
+    color: #400000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -113,7 +113,7 @@
 }
 
 .pagination .active {
-    background-color: #004d99;
+    background-color: #400000;
     color: #fff;
     font-weight:bold;
 }
@@ -160,7 +160,7 @@
     position:absolute;
     top: 5px;
     right: 5px;
-    background: rgba(0, 0, 0, 0.5);
+    background: #400000;
     color: white;
     border: none;
     border-radius: 3px;

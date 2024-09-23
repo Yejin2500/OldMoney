@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <jsp:include page="../header.jsp"/>
 <link rel="stylesheet" type="text/css" href="/css/notice/noticeListStyle.css">
+<div align="center" style="margin-top: 80px;"></div>
 <script>
     function performSearch() {
         var searchType = document.getElementById("searchType").value;

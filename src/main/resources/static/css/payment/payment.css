@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
        :root {
-            --primary-color: #4a90e2;
+            --primary-color: #400000;
             --background-color: #f4f4f4;
             --text-color: #333;
             --card-background: white;
         }
 
         .dark-mode {
-            --primary-color: #61a0ff;
+            --primary-color: #400000;
             --background-color: #222;
             --text-color: #f4f4f4;
             --card-background: #333;
@@ -81,7 +81,7 @@
         }
 
         .amount-btn:hover {
-            background-color: #357abd;
+            background-color: #400000;
         }
 
         .payment-methods {
@@ -123,11 +123,11 @@
         }
 
         .submit-btn:hover {
-            background-color: #357abd;
+            background-color: #400000;
         }
 
         .error {
-            border-color: #ff4136;
+            border-color: #808000;
         }
 
         .dark-mode-toggle {

@@ -15,7 +15,7 @@
 
         h2 {
             color: #2c3e50;
-            border-bottom: 2px solid #3498db;
+            border-bottom: 2px solid #400000;
             padding-bottom: 0.5rem;
         }
 
@@ -37,7 +37,7 @@
         }
 
         button {
-            background-color: #2ecc71;
+            background-color: #400000;
             color: white;
             border: none;
             padding: 0.75rem 1.5rem;
@@ -47,7 +47,7 @@
         }
 
         button:hover {
-            background-color: #27ae60;
+            background-color: #808000;
         }
 
         .icon {

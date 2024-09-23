@@ -33,7 +33,7 @@
     width: 100%;
     border: none;
     border-radius: 5px;
-    background: #004d99;
+    background: #400000;
     color: #fff;
     cursor: pointer;
 }
@@ -93,7 +93,7 @@
 }
 
 .primary-account {
-    border: 2px solid #007bff;
+    border: 2px solid #400000;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
     background: linear-gradient(135deg, #e6f2ff 0%, #ffffff 100%);
 }
@@ -102,7 +102,7 @@
     position: absolute;
     top: -10px;
     left: 10px;
-    background-color: #007bff;
+    background-color: #400000;
     color: white;
     padding: 5px 10px;
     border-radius: 20px;
@@ -114,7 +114,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    color: #ffd700;
+    color: #808000;
     font-size: 1.2em;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .Account-header{
-    background-color: #004d99;
+    background-color: #400000;
     color: #ffffff;
     padding: 10px;
     text-align: center;
@@ -138,7 +138,7 @@
     font-weight: bold;
 }
 .subscription-header{
-    background-color: #004d99;
+    background-color: #400000;
     color: #ffffff;
     padding: 10px;
     text-align: center;
@@ -150,7 +150,7 @@
     font-weight : bold;
 }
 .cancellation-header{
-    background-color: #004d99;
+    background-color: #400000;
     color: #ffffff;
     padding: 10px;
     text-align: center;
@@ -159,7 +159,7 @@
     margin-bottom : 10px;
 }
 .expiration-header{
-    background-color: #004d99;
+    background-color: #400000;
     color: #ffffff;
     padding: 10px;
     text-align: center;
@@ -172,7 +172,7 @@
 }
 .btn-primary{
     padding: 5px;
-    background: #004d99;
+    background: #400000;
     color: #fff;
     font-size: 1em;
 }
@@ -218,10 +218,10 @@
 }
 
 .account-actions .btn-danger {
-    background-color: #fa5252;
+    background-color: #808000;
     color: white;
 }
 
 .account-actions .btn-danger:hover {
-    background-color: #e03131;
+    background-color: #808000;
 }

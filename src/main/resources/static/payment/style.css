@@ -145,7 +145,7 @@ html {
 
 .button:hover {
     color: #fff;
-    background-color: #1b64da;
+    background-color: #400000;
 }
 
 button:disabled,
@@ -187,7 +187,7 @@ textarea {
 }
 
 .color--blue700 {
-    color: #1b64da;
+    color: #400000;
     color: var(--blue700);
 }
 
@@ -466,7 +466,7 @@ textarea {
 
 .checkable__input:checked:before,
 .checkable__input[type="checkbox"]:indeterminate:before {
-    border-color: #3182f6;
+    border-color: #400000;
     border-color: var(--blue500);
     background-color: #3182f6;
     background-color: var(--blue500);

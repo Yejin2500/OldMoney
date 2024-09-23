@@ -8,6 +8,12 @@
 <!DOCTYPE html>
 <jsp:include page="../header.jsp" />
 <link rel="stylesheet" type="text/css" href="/css/commu/commuStyle.css">
+<div align="center" style="margin-top: 80px;">
+</div>
+
+
+<body>
+
 <script>
         function performSearch() {
             var searchType = document.getElementById("searchType").value;
@@ -33,7 +39,7 @@
 <div class="commu">
 	<div class="header-content">
 		<div class="vanner">
-			<img alt="main" src="${pageContext.request.contextPath}/img/van.jpg" style="width:898px; height: 280px;">
+			<img alt="main" src="${pageContext.request.contextPath}/img/ad1.jpg" style="width:898px; height: 280px;">
 		</div>
 		
 		<div class="login-form">
@@ -44,12 +50,12 @@
         <table class="profile-table">
             <tr>
                 <td width="50%" class="profile-image-cell">
-                    <img src="${pageContext.request.contextPath}/img/${profile.profile}" alt="프로필 이미지" class="profile-img"/>
+                    <img src="${pageContext.request.contextPath}/img/ad2.jpg"  style="width:898px; height: 280px;">
                 </td>
                 <td class="profile-info-cell">
                     <div class="profile-info">
                         <strong class="itemfont col" id="nickNameArea">
-                            환영합니다<br>
+                            <h4>환영합니다</h4><br>
                             <sec:authentication property="principal.username"/>님
                         </strong>
                         <br>
@@ -70,7 +76,6 @@
 			
 
 			<sec:authorize access="isAnonymous()">
-				<h4>neoheulge <br> 더 안전하고 더 편리하게</h4>
 				<form action="<c:url value='/login' />" method="post">
 					<input type="text" name="username" placeholder="사용자 이름" required>
 					<input type="password" name="password" placeholder="비밀번호" required>
@@ -336,4 +341,6 @@
 	</div>
 </div>
 </main>
+
+</body>
 <jsp:include page="../footer.jsp"/>

@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="/css/product/ProductStyle.css">
 <link rel="stylesheet" type="text/css" href="/css/product/productList.css">
+<div align="center" style="margin-top: 80px;"></div>
 <main>
 <div class="myPage">
     <div class="header-content">

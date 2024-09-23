@@ -2,8 +2,8 @@
 
 
     :root {
-        --primary-color: #007bff;
-        --secondary-color: #28a745;
+        --primary-color: #400000;
+        --secondary-color: #808000;
         --text-color: #333;
         --bg-color: #f8f9fa;
         --card-bg: #ffffff;
@@ -60,7 +60,7 @@
     }
 
     .status-badge.inactive {
-        background-color: #dc3545;
+        background-color: #808000;
     }
 
     .product-code {
@@ -86,7 +86,7 @@
     }
 
     .signup-btn:hover {
-        background-color: #0056b3;
+        background-color: #400000;
     }
 
 	.product-info {

@@ -34,7 +34,7 @@
     width: 100%;
     border: none;
     border-radius: 5px;
-    background: #004d99;
+    background: #400000;
     color: #fff;
     cursor: pointer;
 }
@@ -120,7 +120,7 @@
 }
 
 .form-container button {
-    background-color: #004D99;
+    background-color: #400000;
     color: white;
     border: none;
     padding: 15px;
@@ -133,7 +133,7 @@
     display: inline;
 }
 .form-container button:hover {
-    background-color: #003a7d;
+    background-color: #400000;
 }
 
 .form-container input::placeholder {

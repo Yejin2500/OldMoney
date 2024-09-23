@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-header {
-    
+header {  
     color: black;
     padding: 1em 0;
     background-color: #fff;
@@ -12,16 +11,14 @@ header {
     border-top: .5rem solid #000000;
     box-sizing: border-box
     line-height: 3;
-    translate: none;
-    
-    
+    translate: none;    
 }
+
 header .container {
   display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    
+    flex-direction: row;
+    align-items: center;   
 }
 
 /* 헤더 제목 스타일 */
@@ -134,20 +131,20 @@ main {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: #004d99;
+    background: #400000;
     color: #fff;
     font-size: 1em;
     cursor: pointer;
 }
 
 .login-form button:hover {
-    background: #003366;
+    background: #000000;
 }
 
 .login-form .links a {
     display: inline-block;
     margin: 5px 0;
-    color: #004d99;
+    color: #3b3b3b;
     text-decoration: none;
     font-size: 0.8em; /* 링크 텍스트 크기 조정 */
 }
@@ -166,10 +163,11 @@ main {
 
 /* 푸터 스타일 */
 footer {
-    background: RGB(198,231,253);
-    color: black;
+    background: black;
+    color: #ffffff;
     padding: 1em 0;
     text-align: center;
+    font-family: abchanel-corpo, Apple SD Gothic Neo, Malgun gothic, "sans-serif";
   
 }
 
@@ -275,14 +273,15 @@ footer {
 }
 
 .community-posts th, .community-prizes th {
-    background-color: RGB(198, 231, 253);
+    color: white;
+    background-color: #400000198231253;
     font-weight: bold;
     border: 1px solid #bbb; /* 테두리 추가 */
 }
 
 
 .community-posts td a, .community-prizes td a {
-    color: #004d99;
+    color: #400000;
     text-decoration: none;
   
 }
@@ -577,8 +576,8 @@ footer {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: #004d99;
-    color: #fff;
+    background: #800000;
+    color: #000000;
     font-size: 1em;
     cursor: pointer;
 }

@@ -15,43 +15,6 @@
 <body>
 
 <script>
-let currentSlide = 0;
-const slides = document.querySelectorAll('.vanner img');
-
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        //slide.classList.remove('active');
-        slide[i].style.display = "none";
-        if (i === index) {
-        
-            //slide.classList.add('active');
-            slide[currentSlide-1].style.display = "block";
-        }
-    });
-}
-
-function changeSlide(direction) {
-	console.log(direction);
-	console.log(currentSlide);
-    currentSlide = currentSlide + direction;
-    if (currentSlide < 0) {
-        currentSlide = slides.length - 1;
-    } else if (currentSlide >= slides.length) {
-        //currentSlide = 0;
-    }
-    showSlide(currentSlide);
-}
-//Initialize the first slide
-showSlide(currentSlide);
-
-//Automatic slide change every 3 seconds
-setInterval(() => {
-    changeSlide(1);
-}, 3000);
-</script>
-
-
-<script>
         function performSearch() {
             var searchType = document.getElementById("searchType").value;
             var searchTerm = document.getElementById("search").value.trim();
@@ -388,6 +351,38 @@ setInterval(() => {
 	</div>
 </div>
 </main>
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll(".vanner img");
 
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        console.log("!!");
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+function changeSlide(direction) {
+	console.log(direction);
+	console.log(currentSlide);
+    currentSlide = currentSlide + direction;
+    if (currentSlide < 0) {
+    	currentSlide = 0;
+    } else if (currentSlide >= slides.length) {
+        currentSlide = slides.length - 1;
+    }
+    showSlide(currentSlide);
+}
+//Initialize the first slide
+showSlide(currentSlide);
+
+//Automatic slide change every 3 seconds
+setInterval(() => {
+    changeSlide(1);
+}, 5000);
+</script>
 </body>
 <jsp:include page="../footer.jsp"/>

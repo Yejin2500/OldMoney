@@ -355,7 +355,7 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll(".vanner img");
 
-function showSlide(index) {
+function showSlide(index) {a
     slides.forEach((slide, i) => {
         slide.classList.remove('active');
         console.log("!!");
@@ -382,7 +382,7 @@ showSlide(currentSlide);
 //Automatic slide change every 3 seconds
 setInterval(() => {
     changeSlide(1);
-}, 5000);
+}, 3000);
 </script>
 </body>
 <jsp:include page="../footer.jsp"/>

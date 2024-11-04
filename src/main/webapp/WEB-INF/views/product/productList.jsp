@@ -45,7 +45,7 @@
 </div>
 </sec:authorize>
             <sec:authorize access="isAnonymous()">
-                <h4>neoheulge <br> 더 안전하고 더 편리하게</h4>
+                <h4>oldmoney <br> 더 안전하고 더 편리하게</h4>
                 <form action="<c:url value='/login' />" method="post">
                     <input type="text" name="username" placeholder="사용자 이름" required>
                     <input type="password" name="password" placeholder="비밀번호" required>

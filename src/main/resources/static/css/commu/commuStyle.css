@@ -14,11 +14,10 @@
     width: 100%; /* Adjust as necessary */
     overflow: hidden;
 }
+
 .vanner img {
     width: 100%;
     display: none; /* Hide all images initially */
-     height: auto; /* 비율을 유지하며 높이를 자동으로 설정 */
-    max-height: 280px; /* 원하는 최대 높이로 설정 */
 }
 
 .vanner img.active {
